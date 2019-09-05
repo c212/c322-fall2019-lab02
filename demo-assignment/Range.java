@@ -7,6 +7,9 @@ public class Range {
   public char getChar() {
     return (char) (Math.random() * (this.b - this.a + 1) + this.a); 
   }
+  public String toString() {
+    return a + "-" + b; 
+  }
   public static void main(String[] args) {
     Range a = new Range('e', 'm'); 
     System.out.println( a.getChar() ); 
