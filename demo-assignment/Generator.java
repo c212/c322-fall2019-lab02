@@ -11,7 +11,13 @@ public class Generator {
   public String toString() {
     return mark + "";  
   }
-  public String nextString(int size) { return "haha"; }
+  public String nextString(int size) { 
+    String answer = ""; 
+    for (int i = 0; i < size; i++) {
+      answer += this.mark.get(0).getChar();  
+    }
+    return answer; 
+  }
   public static void main(String[] args) {
     Generator a = new Generator(); 
     a.addRange('a', 'f'); 
