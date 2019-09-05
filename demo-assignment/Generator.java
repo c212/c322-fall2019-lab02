@@ -14,7 +14,9 @@ public class Generator {
   public String nextString(int size) { 
     String answer = ""; 
     for (int i = 0; i < size; i++) {
-      answer += this.mark.get(0).getChar();  
+      int index = ((int) (Math.random() * this.mark.size()) ); // why 0?
+      System.out.println( index ); 
+      answer += this.mark.get(index).getChar();  
     }
     return answer; 
   }
